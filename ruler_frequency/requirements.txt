@@ -2,3 +2,4 @@ streamlit==1.35.0
 numpy==1.26.4
 # 使用与 Python 3.13 兼容的预编译版本
 scipy>=1.10.0
+matplotlib
