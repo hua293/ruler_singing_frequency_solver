@@ -1,8 +1,4 @@
-# 核心依赖库
 streamlit==1.35.0
 numpy==1.26.4
-scipy==1.11.4
-
-# 说明：
-# 1. 版本号指定为较新的稳定版，确保与streamlit.cloud环境兼容
-# 2. 这三个库是你的代码运行必需的（Streamlit用于界面，NumPy和SciPy用于计算）
+# 使用与 Python 3.13 兼容的预编译版本
+scipy==1.13.1
