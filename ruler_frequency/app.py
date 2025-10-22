@@ -146,7 +146,7 @@ if st.button("🔍 计算并绘制振动曲线", type="primary"):
 
         # 绘制振动曲线
         ax.plot(t, displacement, color='#1E88E5', linewidth=2.5,
-                label=f'ζ={zeta:.2f}, fₙ={f_n:.2f} Hz')
+                label=f'ζ={zeta:.2f}, fₙ={f_nn:.2f} Hz')
 
         # 若有阻尼，添加包络线（可视化衰减趋势）
         if zeta > 0 and zeta < 1:
@@ -155,7 +155,7 @@ if st.button("🔍 计算并绘制振动曲线", type="primary"):
             ax.plot(t, -envelope, 'r--', alpha=0.5, linewidth=1.5)
 
         # 图表美化
-        ax.set_title(f'Free vibration curve (f = {f_n:.2f} Hz)', fontsize=14)
+        ax.set_title(f'Free vibration curve (f = {f_nn:.2f} Hz)', fontsize=14)
         ax.set_xlabel('Time (s)', fontsize=12)
         ax.set_ylabel('Displacement (m)', fontsize=12)
         ax.set_xlim(0, duration)
